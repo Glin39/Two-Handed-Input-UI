@@ -1,4 +1,5 @@
 sceneSetups:
-- path: Assets/Room/scenes/the last revelation.unity
+- path: Assets/Raving Bots/Multi-Input/Example/Scenes/Multi-Input Example.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0

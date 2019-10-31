@@ -111,6 +111,7 @@ public class MIDemoAssignDevices : MonoBehaviour {
     private void StartGame() {
         AssignDevices.SetActive(false);
         Controls.SetActive(true);
+        FirstPersonCamera.controlsIsActive();
 
         foreach (var player in _players) {
             player.CreatePawns();
@@ -167,9 +168,9 @@ public class MIDemoAssignDevices : MonoBehaviour {
         // this is called from MIDemoSelectPlayerCount after user
         // presses 'start' button; here we create all of the player
         // objects (without pawns) and show the assignment instructions UI
-        _players = new MIDemoPlayer[count];
+        _players = new MIDemoPlayer[2];
 
-        for (var idx = 0; idx < count; ++idx) {
+        for (var idx = 0; idx < 2; ++idx) {
             var player = idx + 1;
             var playerObj = Instantiate(PlayerPrefab);
             playerObj.name = string.Format("Player {0}", player);
@@ -201,7 +202,8 @@ public class MIDemoAssignDevices : MonoBehaviour {
         // or a mouse, but not both -- in that case 'partial' will be true, and we'll check
         // what device has already been assigned and update the text accordingly
         var instructions = new StringBuilder();
-        Instructions1.text = string.Format("<b>Selecting devices for player #{0}</b>", _players[_currentPlayer].Player);
+        //Debug.Log(Instructions1.text);
+        //Instructions1.text = string.Format("<b>Selecting devices for player #{0}</b>", _players[_currentPlayer].Player);
 
         if (!partial) {
             instructions.AppendLine("Please select your device (keyboard, mouse, or pad) by pressing any button.");
@@ -214,7 +216,7 @@ public class MIDemoAssignDevices : MonoBehaviour {
             }
         }
 
-        Instructions2.text = instructions.ToString();
+        //Instructions2.text = instructions.ToString();
     }
 
     private void UpdateDeviceList() {

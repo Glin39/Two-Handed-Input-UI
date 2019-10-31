@@ -11,11 +11,26 @@ public class FirstPersonCamera : MonoBehaviour
     private float yaw = 0.0f;
     private float pitch = 0.0f;
 
+    public static bool controlsActive;
+
+    private void Start()
+    {
+        controlsActive = false;
+    }
+
+    public static void controlsIsActive()
+    {
+        controlsActive = true;
+    }
+
     void Update()
     {
-        yaw += speedH * Input.GetAxis("Mouse X");
-        pitch -= speedV * Input.GetAxis("Mouse Y");
+        if (controlsActive)
+        {
+            yaw += speedH * Input.GetAxis("Mouse X");
+            pitch -= speedV * Input.GetAxis("Mouse Y");
 
-        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+            transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+        }
     }
 }
