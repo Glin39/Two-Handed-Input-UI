@@ -62,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FirstPersonCamera.cs" />
+    <Compile Include="Assets\MagnifyingGlass.cs" />
+    <Compile Include="Assets\MoveCursor.cs" />
+    <Compile Include="Assets\OldChest\DemoScene\MouseOrbit.cs" />
     <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoAssignDevices.cs" />
     <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoPawnController.cs" />
     <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoPawnType.cs" />
