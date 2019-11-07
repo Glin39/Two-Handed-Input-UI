@@ -65,14 +65,7 @@
     <Compile Include="Assets\MagnifyingGlass.cs" />
     <Compile Include="Assets\MoveCursor.cs" />
     <Compile Include="Assets\OldChest\DemoScene\MouseOrbit.cs" />
-    <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoAssignDevices.cs" />
-    <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoPawnController.cs" />
-    <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoPawnType.cs" />
-    <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoPlayer.cs" />
-    <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoPlayerPawn.cs" />
-    <Compile Include="Assets\Raving Bots\Multi-Input\Example\Sources\MIDemoSelectPlayerCount.cs" />
     <None Include="Assets\Room\Settings\Note.txt" />
-    <None Include="Assets\Raving Bots\Multi-Input\Plugins\RavingBots.MultiInput.xml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/georg/Desktop/Two-Handed-Input-UI/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -282,12 +275,6 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.9f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="RavingBots.MultiInput">
-      <HintPath>C:/Users/georg/Desktop/Two-Handed-Input-UI/Assets/Raving Bots/Multi-Input/Plugins/RavingBots.MultiInput.dll</HintPath>
-    </Reference>
-    <Reference Include="RavingBots.MultiInput.Editor">
-      <HintPath>C:/Users/georg/Desktop/Two-Handed-Input-UI/Assets/Raving Bots/Multi-Input/Plugins/RavingBots.MultiInput.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/georg/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
